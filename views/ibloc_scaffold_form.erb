@@ -1,7 +1,91 @@
-<h3>iRise iBloc Scaffold Form</h3>
+<div class="row page-title">
+	<div class="col-md-12">
+		Build iBloc
+	</div>
+</div>
 <form action="/form_scaffold" method="post">
-	<input type="text" name="namespace">
-	<input type="text" name="version">
-	<input type="text" name="name">
-	<input type="submit">
+	<div class="row margin-top-18">
+		<div class="col-md-4">
+			<div class="form-group">
+    			<label for="ibloc-name-space">iBloc Namespace:</label>
+    			<input type="text" class="form-control" id="ibloc-name-space" value="CICDIM">
+    			<p class="help-block">..</p>
+  			</div>
+  			<div class="form-group">
+    			<label for="ibloc-name">iBloc Name:</label>
+    			<input type="text" class="form-control" id="ibloc-name-space" placeholder="Google Chart">
+    			<p class="help-block">..</p>
+  			</div>
+  		</div>
+  		<div class="col-md-4">
+			<div class="form-group">
+    			<label for="ibloc-irise-version">iRise Version:</label>
+    			<select class="form-control" id="ibloc-irise-version">
+  					<option>10.0</option>
+  					<option>9.0</option>
+  					<option>8.0</option>
+  					<option>7.0</option>
+  					<option>6.0</option>
+				</select>
+    			<p class="help-block">..</p>
+  			</div>
+  			<div class="form-group">
+    			<label for="ibloc-version">iBloc Version:</label>
+    			<select class="form-control" id="ibloc-version">
+  					<option>1</option>
+  					<option>2</option>
+  					<option>3</option>
+  					<option>4</option>
+  					<option>5</option>
+				</select>
+    			<p class="help-block">..</p>
+  			</div>
+  		</div>
+  		<div class="col-md-4">
+			<div class="form-group">
+    			<label for="ibloc-type">iBloc Type:</label>
+    			<select class="form-control" id="ibloc-type">
+  					<option>Widget</option>
+  					<option>Action</option>
+				</select>
+    			<p class="help-block">..</p>
+  			</div>
+  			<div class="form-group">
+    			<label for="ibloc-xmlns">iBloc Xmlns:</label>
+    			<input type="text" class="form-control" id="ibloc-version" value="http://www.irise.com/schema/ibloc">
+    			<p class="help-block">..</p>
+  			</div>
+  		</div>
+  	</div>
+  	<hr>
+  	<div class="row">
+		<div class="col-md-4">
+			<div class="form-group">
+    			<label for="ibloc-display-name">Display Name:</label>
+    			<input type="text" class="form-control" id="ibloc-display-name" placeholder="Display Name">
+    			<p class="help-block">..</p>
+  			</div>
+  			<div class="form-group">
+    			<label for="ibloc-description">iBloc Description:</label>
+    			<input type="text" class="form-control" id="ibloc-description" placeholder="Write a breif description">
+    			<p class="help-block">..</p>
+  			</div>
+  		</div>
+  		<div class="col-md-4">
+			<div class="form-group">
+    			<label for="ibloc-default-height">Default Height:</label>
+    			<input type="text" class="form-control" id="ibloc-default-height" value="400">
+    			<p class="help-block">..</p>
+  			</div>
+  			<div class="form-group">
+    			<label for="ibloc-default-width">Default Width:</label>
+    			<input type="text" class="form-control" id="ibloc-default-width" value="400">
+    			<p class="help-block">..</p>
+  			</div>
+  		</div>
+  		<div class="col-md-4">
+			<button type="submit" class="btn btn-danger full-width margin-top-54">Create iBloc</button>
+  		</div>
+  	</div>
 </form>
+<hr>

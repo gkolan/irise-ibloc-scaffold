@@ -7,7 +7,7 @@ configure do
 end
 
 get '/' do
-	redirect '/app_guide'
+	redirect '/make_ibloc'
 end
 
 get '/app_guide' do
