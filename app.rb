@@ -4,14 +4,15 @@ require 'FileUtils'
 
 configure do
   set :erb, :layout => :'layouts/project_layout'
+  set :public_folder, 'static-files'
 end
 
 get '/' do
 	redirect '/make_ibloc'
 end
 
-get '/app_guide' do
-	erb :app_guide
+get '/guide' do
+	erb :guide
 end
 
 get '/make_ibloc' do
