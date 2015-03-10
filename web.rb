@@ -27,9 +27,9 @@ end
 
 post '/form_scaffold' do
 	  
-    namespace 	  = params[:ibloc_name_space].downcase
-	  name 		      = params["ibloc_name"].downcase
-    irise_version = params["ibloc_version"]
+    namespace 	  = params[:ibloc_name_space].gsub(/\s+/, "").downcase
+	  name 		      = params["ibloc_name"].gsub(/\s+/, "").downcase
+    irise_version = params["ibloc_irise_version"]
 	  version 	    = params["ibloc_version"]
     type          = params["ibloc_type"]
     time_now      = Time.now.to_i

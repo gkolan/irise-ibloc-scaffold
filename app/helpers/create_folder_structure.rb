@@ -8,6 +8,8 @@ module CreateFolderStructure
         FileUtils.cp_r "ibloc-scaffold-files/stylesheets", "ibloc-zip-files/#{folder_name}/#{namespace}/#{name}/#{version}/resources/"
         FileUtils.cp_r "ibloc-scaffold-files/javascripts", "ibloc-zip-files/#{folder_name}/#{namespace}/#{name}/#{version}/resources/"
         
+        # Make ibloc.xml from MakeIblocXml module
+        create_ibloc_xml_file(namespace,name,irise_version,version,type,folder_name)
         # FileCompress Module
         zip("ibloc-zip-files/#{folder_name}", "ibloc-zip-files/#{folder_name}.zip", true)
         # Send Zip File
